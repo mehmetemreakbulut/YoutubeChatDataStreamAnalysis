@@ -47,13 +47,15 @@ try:
         chat_messages = fetch_chat_messages()
         for item in chat_messages:
             message_data = {
+                'id': item['id'],
                 'user': item['authorDetails']['displayName'],
-                'message': item['snippet']['textMessageDetails']['messageText'],
+                'message': item['snippet']['textMessageDetails']['messageText'] if 'textMessageDetails' in item['snippet'] else '',
                 'timestamp': item['snippet']['publishedAt']
             }
+            print(message_data)
             client_socket.send((json.dumps(message_data) + "\n").encode('utf-8'))
 
-        time.sleep(5)  # Fetch new messages every 5 seconds
+        time.sleep(10)  # Fetch new messages every 5 seconds
 except KeyboardInterrupt:
     print("Stopping data stream...")
 finally:

@@ -8,7 +8,7 @@
 </h1>
 
 <h4 align="center">A minimal youtube live stream sentiment analysis project <a href="http://electron.atom.io" target="_blank"></a>.</h4>
-
+<!--- 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
     <img src="https://badge.fury.io/js/electron-markdownify.svg"
@@ -21,7 +21,7 @@
   <a href="https://www.paypal.me/AmitMerchant">
     <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
   </a>
-</p>
+</p> 
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
@@ -30,7 +30,7 @@
   <a href="#credits">Credits</a> •
   <a href="#related">Related</a> •
   <a href="#license">License</a>
-</p>
+</p> --->
 
 <!--- ![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif) --->
 
